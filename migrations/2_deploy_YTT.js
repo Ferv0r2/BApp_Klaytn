@@ -2,8 +2,8 @@ const YouTubeThumbnailToken = artifacts.require('./YouTubeThumbnailToken.sol')
 const fs = require('fs')
 
 module.exports = function (deployer) {
-  //var name = "";
-  //var symbol = "";
+  var name = "Kepler-token";
+  var symbol = "KT";
 
   deployer.deploy(YouTubeThumbnailToken, name, symbol)
     .then(() => {
